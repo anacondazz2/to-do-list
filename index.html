@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>To-Do List</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="to-do-list flex-col-center">
+            <div class="input-container">
+                <input type="text" class="input" placeholder="New To-do..." onkeyup="isEnter(event)">
+                <button type="button" class="add-btn" onclick="newListElement()">Add</button>
+            </div>
+            <ul class="to-dos"></ul>
+        </div>
+    </div>
+</body>
+</html>
